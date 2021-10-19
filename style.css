@@ -1,0 +1,152 @@
+/* 
+
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+
+*/
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-first: hsl(31, 77%, 52%);
+    --clr-second: hsl(184, 100%, 22%);
+    --clr-third: hsl(179, 100%, 13%);
+    --para-color: hsla(0, 0%, 100%, 0.75);
+    --light-grey: hsl(0, 0%, 95%);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 15px;
+    background: var(--light-grey);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.col {
+    padding: 2.5rem 1rem 5rem 1rem;
+}
+
+.col-first {
+    background: var(--clr-first);
+    border-radius: 10px 10px 0 0;
+}
+
+.col-second {
+    background: var(--clr-second);
+}
+
+.col-third {
+    background: var(--clr-third);
+    border-radius: 0 0 10px 10px;
+}
+
+.col img {
+    padding: 1rem;
+}
+
+.col h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: var(--para-color);
+    font-size: 2.5rem;
+}
+
+.col p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    padding: 1rem;
+    color: var(--para-color);
+    margin-bottom: 2rem;
+    max-width: 300px;
+}
+
+.col-button {
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.col a {
+    background: white;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.button-first {
+    color: var(--clr-first);
+}
+
+.button-first:hover, .button-first:active {
+    outline: 2px solid white;
+    background: var(--clr-first);
+    color: white;
+}
+
+.button-second {
+    color: var(--clr-second);
+}
+
+.button-second:hover, .button-second:active {
+    outline: 2px solid white;
+    background: var(--clr-second);
+    color: white;
+}
+
+.button-third {
+    color: var(--clr-third);
+}
+
+.button-third:hover, .button-third:active {
+    outline: 2px solid white;
+    background: var(--clr-third);
+    color: white;
+}
+
+.attribution {
+    padding: 0 3rem;
+}
+
+@media (min-width: 800px) {
+    .row {
+        flex-direction: row;
+        height: 100vh;
+    }
+    .col-first {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .col-third {
+        border-radius: 0 10px 10px 0;
+    }
+}
